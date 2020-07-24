@@ -1,0 +1,13 @@
+{
+    "email" : "gabriel.test@testing.com",
+    "firstname" : "Gabriel",
+    "lastname" : "Duran",
+    "password" : "t3$t1ng",
+    "address" : "San Carlos",
+    "city" : "Quesada",
+    "zipcode" : "21001",
+    "country" : "United States",
+    "state" : "Florida",
+    "mobile_phone" : "88888888",
+    "alias" : "Delivery Area"
+}
