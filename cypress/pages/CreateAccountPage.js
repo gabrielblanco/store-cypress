@@ -1,53 +1,51 @@
 class CreateAccountPage {
 
-    // emailInput(){ return cy.get('#email_create') }
+    static maleGenderRadioBtn(){ return cy.get('#id_gender1') }
 
-    maleGenderRadioBtn(){ return cy.get('#id_gender1') }
+    static customerFirstName(){ return cy.get('#customer_firstname') }
 
-    customerFirstName(){ return cy.get('#customer_firstname') }
+    static customerLastName(){ return cy.get('#customer_lastname') }
 
-    customerLastName(){ 
-        cy.get('#customer_lastname').clear()
-        return cy.get('#customer_lastname') 
+    static emailInput(){ return cy.get('#email') }
+
+    static passwordInput(){ return cy.get('#passwd') }
+
+    static setBirthDay(day, month, year){ }
+
+    static newsletterChkbox(){ return cy.get('#newsletter') }
+
+    static offersChkbox(){ return cy.get('#optin') }
+
+    static firsttNameInput(){ return cy.get('#firstname') }
+
+    static lastNameInput(){ return cy.get('#lastname') }
+
+    static companyInput(){ return cy.get('#company') }
+
+    static addressInput(){ return cy.get('#address1') }
+
+    static secondAddressInput(){ return cy.get('#address2') }
+
+    static cityInput(){ return cy.get('#city') }
+
+    static stateDrp(){ return cy.get('#id_state') }
+
+    static zipcodeInput(){ return cy.get('#postcode') }
+
+    static countryDrp(){ return cy.get('#id_country') }
+
+    static additionalInfo(){ return cy.get('#other') }
+
+    static phoneInput(){ return cy.get('#phone') }
+
+    static mobilePhoneInput(){ return cy.get('#phone_mobile') }
+
+    static aliasInput(){ 
+        cy.get('#alias').clear()
+        return cy.get('#alias') 
     }
 
-    emailInput(){ return cy.get('#email') }
-
-    passwordInput(){ return cy.get('#passwd') }
-
-    newsletterChkbox(){ return cy.get('#newsletter') }
-
-    offersChkbox(){ return cy.get('#optin') }
-
-    firsttNameInput(){ return cy.get('#firstname') }
-
-    lastNameInput(){ return cy.get('#lastname') }
-
-    companyInput(){ return cy.get('#company') }
-
-    addressInput(){ return cy.get('#address1') }
-
-    secondAddressInput(){ return cy.get('#address2') }
-
-    cityInput(){ return cy.get('#city') }
-
-    stateDrp(){ return cy.get('#id_state') }
-
-    zipcodeInput(){ return cy.get('#postcode') }
-
-    countryDrp(){ return cy.get('#id_country') }
-
-    additionalInfo(){ return cy.get('#other') }
-
-    phoneInput(){ return cy.get('#phone') }
-
-    mobilePhoneInput(){ return cy.get('#phone_mobile') }
-
-    aliasInput(){ return cy.get('#alias') }
-
-    setBirthDay(day, month, year){
-
-    }
+    static registerBtn(){ return cy.get('#submitAccount') }
     
 }
 

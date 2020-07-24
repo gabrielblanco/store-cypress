@@ -1,4 +1,4 @@
-import SignInPage from '../pages/users/SignInPage'
+import SignInPage from '../pages/SignInPage'
 
 describe('Sign In Page', () => {
     beforeEach(() => {
