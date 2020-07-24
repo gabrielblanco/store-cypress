@@ -2,20 +2,18 @@ import SignInPage from '../pages/SignInPage'
 import CreateAccountPage from '../pages/CreateAccountPage'
 
 describe('Register Page', () => {
-    before(function(){
-        cy.fixture('register.json').as('registerData')
-    })
     beforeEach(() => {
         cy.visit('http://automationpractice.com/index.php?controller=authentication&back=my-account')
+        cy.fixture('register.json').as('registerData')
     })
     it.skip('Testing email input', ()=> {
-        SignInPage.emailInput().type('Testing')
+        SignInPage.createAccountEmailInput().type('Testing')
         SignInPage.createAccountBtn().click()
         // SignInPage.emailInput().should('have.css', 'border', '1px solid #f13340')
         SignInPage.createAccountEmailErrorMsg().should('be.visible')
     })
     it('Create new account', function() {
-        SignInPage.emailInput().type(this.registerData.email)
+        SignInPage.createAccountEmailInput().type(this.registerData.email)
         SignInPage.createAccountBtn().click()
         CreateAccountPage.maleGenderRadioBtn().click()
         CreateAccountPage.customerFirstName().type(this.registerData.firstname)
