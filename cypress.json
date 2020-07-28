@@ -1,5 +1,8 @@
 {
   "chromeWebSecurity": false,
   "experimentalSourceRewriting": true,
-  "projectId": "tmim4k"
+  "projectId": "tmim4k",
+  "env": {
+    "CYPRESS_RECORD_KEY" : "ae128380-38ff-49e8-8cd1-55650896fe54"
+  }
 }

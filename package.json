@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "chromeTest" : "npx cypress run --browser chrome",
-    "firefoxTest" : "npm run --browser firefox"
+    "cy:chrome" : "npx cypress run --browser chrome",
+    "cy:firefox" : "npx cypress run --browser firefox",
+    "test:headless" : "npx cypress run",
+    "test:open" : "npx cypress open",
+    "test:record" : "npx cypress run --record"
   },
   "keywords": [],
   "author": "",

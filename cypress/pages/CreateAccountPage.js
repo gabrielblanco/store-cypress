@@ -40,10 +40,7 @@ class CreateAccountPage {
 
     static mobilePhoneInput(){ return cy.get('#phone_mobile') }
 
-    static aliasInput(){ 
-        cy.get('#alias').clear()
-        return cy.get('#alias') 
-    }
+    static aliasInput(){ return cy.get('#alias') }
 
     static registerBtn(){ return cy.get('#submitAccount') }
     

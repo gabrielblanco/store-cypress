@@ -16,7 +16,7 @@ describe('Register Page', () => {
         SignInPage.createAccountEmailInput().type(this.registerData.email)
         SignInPage.createAccountBtn().click()
         CreateAccountPage.maleGenderRadioBtn().click()
-        CreateAccountPage.customerFirstName().type(this.registerData.firstname)
+        CreateAccountPage.customerFirstName().clear().type(this.registerData.firstname)
         CreateAccountPage.customerLastName().type(this.registerData.lastname)
         CreateAccountPage.passwordInput().type(this.registerData.password)
         CreateAccountPage.addressInput().type(this.registerData.address)

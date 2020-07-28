@@ -9,7 +9,7 @@ describe('Sign In Page', () => {
         SignInPage.forgotPasswordLink().click()
         cy.url().should('include', 'controller=password')
     })
-    it('Invalid Authentication', function() {
+    it('Verify error message when invalid authentication', function() {
         SignInPage.emailInput().type(this.userData.invalidUser.email)
         SignInPage.passwordInput().type(this.userData.invalidUser.password)
         SignInPage.signInBtn().click()
@@ -19,10 +19,17 @@ describe('Sign In Page', () => {
         })
     })
     it('Valid SignIn', function() {
-        console.log(this.userData.validUser.email)
+        // console.log(this.userData.validUser.email)
         SignInPage.emailInput().type(this.userData.validUser.email)
         SignInPage.passwordInput().type(this.userData.validUser.password)
         SignInPage.signInBtn().click()
         cy.url().should('include', 'controller=my-account')
+    })
+    it.skip('Make a POST login', ()=> {
+        const login_data = {"email": "gabriel.test@testing.com", "passwd" : "t3$t1ng"}
+        cy.request('POST', 'http://automationpractice.com/index.php?controller=authentication&back=my-account', login_data)
+        .then((response) => {
+            expect(response.status).to.eq(200)
+        })
     })
 })
