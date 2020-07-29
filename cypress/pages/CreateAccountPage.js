@@ -70,7 +70,7 @@ class CreateAccountPage {
         if(offers) { this.offersChkbox().click() }
     }
 
-    // Fills out the address information
+    // Fills out the address information form
     static fillAddressInfo(firstname, lastname, company, address1, address2, city, state, zipcode, country, additional_info, home_phone, mobile_phone, alias){
         this.firsttNameInput().type(firstname)
         this.lastNameInput().type(lastname)
@@ -87,7 +87,7 @@ class CreateAccountPage {
         this.aliasInput().type(alias)
     }
 
-    static fillAccountInfo(){
+    static fillNewAccountInfo(){
         // registerBtn().click()
     }
 
