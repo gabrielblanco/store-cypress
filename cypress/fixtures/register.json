@@ -1,13 +1,23 @@
 {
+    "gender" : "male",
     "email" : "new.test@testing.com",
     "firstname" : "Gabriel",
     "lastname" : "Duran",
+    "company" : "Avantica",
     "password" : "t3$t1ng",
-    "address" : "San Carlos",
+    "date_of_birth" : {
+        "day" : "14",
+        "month" : "August",
+        "year" : "1998"
+    },
+    "address1" : "San Carlos",
+    "address2" : "Quesada",
     "city" : "Quesada",
     "zipcode" : "21001",
     "country" : "United States",
     "state" : "Florida",
+    "additional_info": "Information for testing",
+    "home_phone" : "24600404",
     "mobile_phone" : "88888888",
     "alias" : "Delivery Area"
 }
