@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+// Cypress.Commands.add("logIn", () => { 
+//     SignInPage.signIn(this.userData.validUser.email, this.userData.validUser.password)
+//     cy.url().should('include', 'controller=my-account')
+// })
+
+// Cypress.Commands.add("addProdToCart", (prodId) => { 
+//     const prod_details = {'id_product':'4', 'controller':'cart', 'add':'1', 'ajax':'true', 'qty':'1', 'token':'a8e2f23909ef4abc7ecf3e3286b0dac9'}
+//     cy.request('POST', 'http://automationpractice.com/index.php?', prod_details)
+//         .then((response) => {
+//             expect(response.status).to.eq(200)
+//     })
+// })

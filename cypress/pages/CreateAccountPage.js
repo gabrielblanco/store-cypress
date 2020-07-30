@@ -1,57 +1,34 @@
 class CreateAccountPage {
 
     // Personal Information Locators
-
     static maleGenderRadioBtn(){ return cy.get('#id_gender1') }
-
     static femaleGenderRadioBtn(){ return cy.get('#id_gender2') }
-
     static customerFirstName(){ return cy.get('#customer_firstname').clear() }
-
     static customerLastName(){ return cy.get('#customer_lastname').clear() }
-
     static emailInput(){ return cy.get('#email').clear() }
-
     static passwordInput(){ return cy.get('#passwd').clear() }
-
     static setBirthDay(day, month, year){ 
         cy.get('#days').select(day)
         cy.get('#months').select(month)
         cy.get('#years').select(year)
     }
-
     static newsletterChkbox(){ return cy.get('#newsletter') }
-
     static offersChkbox(){ return cy.get('#optin') }
 
     // Address Locators
-
     static firsttNameInput(){ return cy.get('#firstname').clear() }
-
     static lastNameInput(){ return cy.get('#lastname').clear() }
-
     static companyInput(){ return cy.get('#company').clear() }
-
     static addressInput(){ return cy.get('#address1').clear() }
-
     static secondAddressInput(){ return cy.get('#address2').clear() }
-
     static cityInput(){ return cy.get('#city').clear() }
-
     static stateDrp(){ return cy.get('#id_state') }
-
     static zipcodeInput(){ return cy.get('#postcode').clear() }
-
     static countryDrp(){ return cy.get('#id_country') }
-
     static additionalInfo(){ return cy.get('#other').clear() }
-
     static phoneInput(){ return cy.get('#phone').clear() }
-
     static mobilePhoneInput(){ return cy.get('#phone_mobile').clear() }
-
     static aliasInput(){ return cy.get('#alias').clear() }
-
     static registerBtn(){ return cy.get('#submitAccount') }
 
     // Fills out the Personal information form
@@ -87,6 +64,7 @@ class CreateAccountPage {
         this.aliasInput().type(alias)
     }
 
+    // Fills out the required forms to create a new account
     static fillNewAccountInfo(){
         // registerBtn().click()
     }
